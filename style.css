@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-link li {
+  list-style: none;
+}
+.nav-link a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burguer {
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.burguer img {
+  width: 25px;
+  margin: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-link {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-link {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+  }
+}
